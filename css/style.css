@@ -1,0 +1,187 @@
+body{
+  margin: 0 auto;
+}
+/* フィールドのスタイリング */
+.field{
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid black;
+  background-color: #69b076;
+}
+/* ゴールかスーパーセーブの文字列 */
+p{
+  margin: 0 auto;
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  width: 500px;
+}
+/* フィールド中央に結果発表 */
+.overray{
+  display: none;
+}
+
+/* ゴールエリアのスタイリング */
+.goalarea{
+  width: 500px;
+  height: 100px;
+  text-align: center;
+}
+/* キーパーエリアのスタイリング */
+.keeperarea{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  height: 350px;
+}
+
+.keeper{
+  display: block;
+  width: 40px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+/* ボールエリアの表示 */
+.ballarea{
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  transition: all 1s;
+}
+
+/* ボールの初期位置 */
+.ball{
+  width: 40px;
+  height: 40px;
+  transition: all 1s;
+}
+
+aside{
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+}
+/* ボタンのスタイリング */
+button{
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px  0 #626c7c;
+  text-align: center;
+  background: #FF3333;
+  width: 150px;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+/*NEXTボタンのスタイリング */
+#next{
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 4px  0 #75A9FF;
+  text-align: center;
+  background:gray;
+  width: 150px;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+/* スコア表に関するスタイル調整 */
+.scoretable{
+  list-style: none;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 500px;
+  height: 80px;
+  background-color: seagreen;
+  color: white;
+}
+.flex{
+  display: flex;
+}
+
+.player1{
+ width: 80px;
+ height:40px;
+ line-height: 40px;
+}
+.player2{
+  width: 80px;
+ height: 40px;
+ line-height: 40px;
+}
+
+td{
+ margin: 0 auto;
+ padding: 5px;
+ height: 35px;
+ display: inline;
+ line-height: 40px;
+ color: white;
+}
+
+#scorenum{
+  margin: 0 0 0 auto;
+  text-align: center;
+  width: 40px;
+  line-height: 40px;
+}
+#scorenum2{
+  margin: 0 0 0 auto;
+  text-align: center;
+  width: 40px;
+  line-height: 40px;
+}
+/* ボールのアニメーションスタイリング */
+/* 中央へ動く */
+.center{
+  width: 40px;
+  height: 40px;
+  transition: all 1s;  
+  transform: translateY(-400px);
+}
+
+/* 左隅へ動く */
+.left{
+  width: 40px;
+  height: 40px;
+  transition: all 1s;
+  transform: translate(-140px,-380px);
+}
+
+/* 右隅へ動く */
+.right{
+  width: 40px;
+  height: 40px;
+  transition: all 1s;
+  transform: translate(140px, -400px);
+}
+
+.inactive{
+  opacity: 0.5;
+}
+/* ゴールキーパーを全表示する */
+.active{
+  display: block;
+  width: 40px;
+  height: 50px;
+  opacity: 1;
+}
+ .activate{
+  opacity: 1;
+ }
+ 
+
+
